@@ -11,30 +11,31 @@ modules:
       - source: system
         destination: /
 
-  # Enable COPR repositories natively using BlueBuild's copr module
+  # Enable COPR repositories natively
   - type: copr
     enable:
       - ptitseb/cachyos
       - atim/starship
 
-  # Swap stock kernel for CachyOS and install your CLI tools
+  # Swap stock kernel for CachyOS cleanly
   - type: rpm-ostree
     install:
       - micro
       - starship
-      - kernel-cachyos
-      - kernel-cachyos-core
-      - kernel-cachyos-modules
-      - kernel-cachyos-modules-extra
     remove:
+      - firefox
+      - firefox-langpacks
       - kernel
       - kernel-core
       - kernel-modules
       - kernel-modules-extra
-      - firefox
-      - firefox-langpacks
-    opt-flags:
-      - --allow-erasing
+    replace:
+      - from-repo: ptitseb-cachyos
+        packages:
+          - kernel-cachyos
+          - kernel-cachyos-core
+          - kernel-cachyos-modules
+          - kernel-cachyos-modules-extra
 
   - type: default-flatpaks
     configurations:
