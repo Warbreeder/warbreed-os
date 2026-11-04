@@ -1,24 +1,24 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# Image will be published to ghcr.io/<user>/warbreed-os
 name: warbreed-os
 description: Personal Fedora Kinoite spin with CachyOS Kernel and Flatpak Firefox.
 
-# Base image set to Fedora Kinoite (KDE Plasma)
 base-image: ghcr.io/blue-build/base-images/fedora-kinoite
 image-version: latest
 
 modules:
-  # Copy local repo system files if present (files/system/* -> /)
   - type: files
     files:
       - source: system
         destination: /
 
-  # Pull CachyOS repository and swap out the stock Linux kernel
+  # Enable COPR repositories natively via BlueBuild copr module
+  - type: copr
+    enable:
+      - ptitseb/cachyos
+      - atim/starship
+
+  # Package management & kernel swap
   - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/ptitseb/cachyos/repo/fedora-%OS_VERSION%/ptitseb-cachyos-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
       - micro
       - starship
@@ -26,14 +26,13 @@ modules:
       - firefox
       - firefox-langpacks
     replace:
-      - from-repo: https://copr.fedorainfracloud.org/coprs/ptitseb/cachyos/repo/fedora-%OS_VERSION%/ptitseb-cachyos-fedora-%OS_VERSION%.repo
+      - from-repo: copr:copr.fedorainfracloud.org:ptitseb:cachyos
         packages:
           - kernel
           - kernel-core
           - kernel-modules
           - kernel-modules-extra
 
-  # Configure System & User Flatpaks
   - type: default-flatpaks
     configurations:
       - notify: true
@@ -43,5 +42,4 @@ modules:
           - org.gnome.Loupe
       - scope: user
 
-  # Enforce image signing policy
   - type: signing
