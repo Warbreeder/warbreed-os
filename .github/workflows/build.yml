@@ -1,11 +1,10 @@
 name: bluebuild
 on:
   schedule:
-    - cron: "00 06 * * *" # Runs at 06:00 UTC every day
+    - cron: "00 06 * * *"
   push:
     paths-ignore:
       - "**.md"
-  pull_request:
   workflow_dispatch:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
