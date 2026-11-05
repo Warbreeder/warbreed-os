@@ -42,10 +42,15 @@ modules:
       - plasma-discover-kns
       - fedora-repos-archive
 
+      
   - type: default-flatpaks
     configurations:
       - notify: true
         scope: system
+        repo:
+          url: https://dl.flathub.org/repo/flathub.flatpakrepo
+          name: flathub
+          title: Flathub
         install:
           - org.mozilla.firefox
           - org.pvermeer.WebAppHub
