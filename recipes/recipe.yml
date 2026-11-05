@@ -33,12 +33,13 @@ modules:
       - firefox
       - firefox-langpacks
 
-      # KDE Discover
+      # KDE Discover & Libs
       - plasma-discover
+      - plasma-discover-libs
       - plasma-discover-notifier
       - plasma-discover-flatpak
       - plasma-discover-rpm-ostree
-
+      
   - type: default-flatpaks
     configurations:
       - notify: true
