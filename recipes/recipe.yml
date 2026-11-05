@@ -1,4 +1,3 @@
-
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 name: warbreed-os
 description: Custom Fedora Kinoite spin with CachyOS Kernel.
@@ -23,23 +22,22 @@ modules:
       - kernel-cachyos
 
     remove:
-  # Original Fedora kernel
-  - kernel
-  - kernel-core
-  - kernel-modules
-  - kernel-modules-core
-  - kernel-modules-extra
+      # Original Fedora kernel
+      - kernel
+      - kernel-core
+      - kernel-modules
+      - kernel-modules-core
+      - kernel-modules-extra
 
-  # Firefox
-  - firefox
-  - firefox-langpacks
+      # Firefox
+      - firefox
+      - firefox-langpacks
 
-  # KDE Discover
-  - plasma-discover
-  - plasma-discover-notifier
-  - plasma-discover-flatpak
-  - plasma-discover-rpm-ostree
-      
+      # KDE Discover
+      - plasma-discover
+      - plasma-discover-notifier
+      - plasma-discover-flatpak
+      - plasma-discover-rpm-ostree
 
   - type: default-flatpaks
     configurations:
@@ -64,7 +62,7 @@ modules:
           - org.qbittorrent.qBittorrent
           - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
           - flathub org.fooyin.fooyin
-          
+
       - scope: user
 
   - type: signing
