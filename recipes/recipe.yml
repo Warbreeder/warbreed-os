@@ -22,16 +22,18 @@ modules:
       - kernel-cachyos
 
     remove:
-      # Original Fedora kernel
       - kernel
       - kernel-core
       - kernel-modules
       - kernel-modules-core
       - kernel-modules-extra
-
-      # Firefox
       - firefox
       - firefox-langpacks
+      - plasma-discover
+      - plasma-discover-notifier
+      - plasma-discover-flatpak
+      - plasma-discover-rpm-ostree
+      - fedora-repos-archive
 
   - type: default-flatpaks
     configurations:
