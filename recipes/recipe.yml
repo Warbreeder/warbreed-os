@@ -51,7 +51,7 @@ modules:
           - com.github.tchx84.Flatseal
           - com.vysp3r.ProtonPlus
           - ru.linux_gaming.PortProton
-          - flathub fm.reaper.Reaper
+          - fm.reaper.Reaper
           - com.bandpassrecords.dpm
           - com.obsproject.Studio
           - com.obsproject.Studio.Plugin.OBSVkCapture
@@ -59,7 +59,7 @@ modules:
           - com.obsproject.Studio.Plugin.StrokeGlowShadow
           - org.qbittorrent.qBittorrent
           - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
-          - flathub org.fooyin.fooyin
+          - org.fooyin.fooyin
 
       - scope: user
 
