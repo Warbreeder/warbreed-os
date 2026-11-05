@@ -69,6 +69,7 @@ modules:
           - com.obsproject.Studio.Plugin.Countdown
           - com.obsproject.Studio.Plugin.OBSPWVideo
           - com.obsproject.Studio.Plugin.Gstreamer
+          - com.chatterino.chatterino
           - org.qbittorrent.qBittorrent
           - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
           - org.fooyin.fooyin
