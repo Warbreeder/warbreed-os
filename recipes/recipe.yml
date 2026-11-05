@@ -45,6 +45,7 @@ modules:
         scope: system
         install:
           - org.mozilla.firefox
+          - org.pvermeer.WebAppHub
           - com.stremio.Stremio
           - com.spotify.Client
           - io.github.kolunmi.Bazaar
