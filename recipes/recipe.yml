@@ -18,8 +18,6 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/lilay/topgrade/repo/fedora-%OS_VERSION%/lilay-topgrade-fedora-%OS_VERSION%.repo
 
     install:
-      - micro
-      - starship
       - topgrade
       - kernel-cachyos
       - fastfetch
