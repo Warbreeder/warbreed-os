@@ -30,6 +30,10 @@ modules:
       - kernel-modules-extra
       - firefox
       - firefox-langpacks
+      - plasma-discover
+      - plasma-discover-notifier
+      - plasma-discover-flatpak
+      
 
   - type: default-flatpaks
     configurations:
@@ -37,7 +41,23 @@ modules:
         scope: system
         install:
           - org.mozilla.firefox
-          - org.gnome.Loupe
+          - com.stremio.Stremio
+          - com.spotify.Client
+          - io.github.kolunmi.Bazaar
+          - com.valvesoftware.Steam
+          - it.mijorus.gearlever
+          - com.github.tchx84.Flatseal
+          - com.vysp3r.ProtonPlus
+          - ru.linux_gaming.PortProton
+          - flathub fm.reaper.Reaper
+          - com.bandpassrecords.dpm
+          - com.obsproject.Studio
+          - com.obsproject.Studio.Plugin.OBSVkCapture
+          - com.obsproject.Studio.Plugin.AitumMultistream
+          - com.obsproject.Studio.Plugin.StrokeGlowShadow
+          - org.qbittorrent.qBittorrent
+          - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
+          
       - scope: user
 
   - type: signing
