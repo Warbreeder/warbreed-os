@@ -63,6 +63,7 @@ modules:
           - org.qbittorrent.qBittorrent
           - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
           - org.fooyin.fooyin
+          - com.discordapp.Discord
 
       - scope: user
 
