@@ -34,6 +34,7 @@ modules:
       - plasma-discover-notifier
       - plasma-discover-flatpak
       - plasma-discover-rpm-ostree
+      - plasma-discover-kns
       - fedora-repos-archive
 
   - type: default-flatpaks
