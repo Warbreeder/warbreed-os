@@ -30,6 +30,7 @@ modules:
       - firefox
       - firefox-langpacks
       - plasma-discover
+      - plasma-discover-libs
       - plasma-discover-notifier
       - plasma-discover-flatpak
       - plasma-discover-rpm-ostree
