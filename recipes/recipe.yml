@@ -57,6 +57,7 @@ modules:
           - com.obsproject.Studio.Plugin.StrokeGlowShadow
           - org.qbittorrent.qBittorrent
           - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
+          - flathub org.fooyin.fooyin
           
       - scope: user
 
