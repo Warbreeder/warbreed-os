@@ -23,6 +23,8 @@ modules:
       - kwrite
       - kde-partitionmanager
       - htop
+      - kwrite
+      - partitionmanager
 
     remove:
       - firefox
@@ -72,6 +74,11 @@ modules:
           - com.wps.Office
           - com.heroicgameslauncher.hgl
           - org.videolan.VLC
+          - io.missioncenter.MissionCenter
+          - org.gimp.GIMP
+          - org.kde.kdenlive
+          - org.kde.krita
+          - org.kde.gwenview
 
       - scope: user
 
