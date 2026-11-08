@@ -23,8 +23,6 @@ modules:
       - kwrite
       - kde-partitionmanager
       - htop
-      - kwrite
-      - partitionmanager
 
     remove:
       - firefox
@@ -71,7 +69,7 @@ modules:
           - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
           - org.fooyin.fooyin
           - com.discordapp.Discord
-          - com.wps.Office
+          - org.onlyoffice.desktopeditors
           - com.heroicgameslauncher.hgl
           - org.videolan.VLC
           - io.missioncenter.MissionCenter
