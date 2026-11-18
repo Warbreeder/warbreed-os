@@ -52,12 +52,12 @@ modules:
           - com.spotify.Client
           - io.github.kolunmi.Bazaar
           - com.valvesoftware.Steam
+          - com.epicgames.launcher
           - it.mijorus.gearlever
           - com.github.tchx84.Flatseal
           - com.vysp3r.ProtonPlus
           - ru.linux_gaming.PortProton
           - fm.reaper.Reaper
-          - com.bandpassrecords.dpm
           - com.obsproject.Studio
           - com.obsproject.Studio.Plugin.OBSVkCapture
           - com.obsproject.Studio.Plugin.AitumMultistream
@@ -72,7 +72,6 @@ modules:
           - org.fooyin.fooyin
           - com.discordapp.Discord
           - org.onlyoffice.desktopeditors
-          - com.heroicgameslauncher.hgl
           - org.videolan.VLC
           - io.missioncenter.MissionCenter
           - org.gimp.GIMP
